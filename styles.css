@@ -90,6 +90,17 @@ main {
     flex: 1;
     padding: 20px 0 20px 35px;
 }
+.block {
+    flex: 1;
+    padding: 20px 0;
+}
+.block:first-child {
+    padding-right: 30px;
+    border-right: 2px solid;
+}
+.block:not(:first-child) {
+    padding-left: 30px;
+}
 h5 {
     font-weight: 600;
     font-size: 18px;
@@ -124,11 +135,13 @@ h6 {
     font-size: 16px;
     margin-bottom: 16px;
 }
-.right-block li {
+.right-block li,
+.block li {
     margin-left: 25px;
     position: relative;
 }
-.right-block li:before {
+.right-block li:before, 
+.block li:before {
     content: "\f111";
     position: absolute;
     left: -20px; top: 6px;
