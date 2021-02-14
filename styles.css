@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     background: white;
 }
-section {
+section:not(:last-child) {
     margin-bottom: 40px;
 }
 ul {
@@ -78,7 +78,7 @@ main {
     display: flex;
     justify-content: stretch;
     align-items: stretch;
-    margin: 20px 30px 20px;
+    margin: 40px 30px;
 }
 .left-block {
     width: 200px;
@@ -88,18 +88,7 @@ main {
 }
 .right-block {
     flex: 1;
-    padding: 20px 0 20px 35px;
-}
-.block {
-    flex: 1;
-    padding: 20px 0;
-}
-.block:first-child {
-    padding-right: 30px;
-    border-right: 2px solid;
-}
-.block:not(:first-child) {
-    padding-left: 30px;
+    padding: 20px 0 20px 40px;
 }
 h5 {
     font-weight: 600;
@@ -135,13 +124,11 @@ h6 {
     font-size: 16px;
     margin-bottom: 16px;
 }
-.right-block li,
-.block li {
+.right-block li {
     margin-left: 25px;
     position: relative;
 }
-.right-block li:before, 
-.block li:before {
+.right-block li:before {
     content: "\f111";
     position: absolute;
     left: -20px; top: 6px;
