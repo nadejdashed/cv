@@ -144,3 +144,9 @@ h6 {
     line-height: 1;
     color: #12223d;
 }
+
+@media print {
+    html {
+        background: none;
+    }
+}
